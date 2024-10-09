@@ -1,0 +1,109 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-image: url('fondo.jpg'); 
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat;
+}
+
+header {
+    background-color: rgba(255, 255, 255, 0.8); 
+    padding: 10px;
+}
+
+main {
+    background-color: rgba(255, 255, 255, 0.8); 
+    padding: 20px;
+    border-radius: 8px; 
+}
+/* Estilos específicos para el módulo de encuestas */
+.modulo-encuestas {
+    padding: 20px;
+    background-color: #f4f4f4;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.modulo-encuestas h2 {
+    text-align: center;
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.modulo-encuestas .contenedor-encuestas {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.modulo-encuestas .encuesta {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+}
+
+.modulo-encuestas .encuesta h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #007bff;
+}
+
+.modulo-encuestas .encuesta p {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 15px;
+}
+
+.modulo-encuestas .encuesta button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.modulo-encuestas .encuesta button:hover {
+    background-color: #0056b3;
+}
+
+.modulo-encuestas .encuesta:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+.encuesta {
+    background-color: #f4f4f4;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.cuadro {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 5px;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    transition: background-color 0.3s, border 0.3s;
+    cursor: pointer;
+}
+
+input[type="radio"] {
+    display: none; /* Ocultamos los radios para mostrar solo los cuadros */
+}
+
+input[type="radio"]:checked + .cuadro {
+    background-color: #007bff;
+    color: white;
+    border: 1px solid #0056b3;
+}

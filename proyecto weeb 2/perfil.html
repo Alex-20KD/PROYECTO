@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil Graduado - ULEAM</title>
+    <link rel="stylesheet" href="perfil.css">
+</head>
+<body>
+    <header>
+        <h1>Perfil del Graduado</h1>
+        <nav>
+            <ul>
+                <li><a href="encuestas.html">Encuestas</a></li>
+                <li><a href="reportes.html">Reportes</a></li>
+                <li><a href="https://ec.linkedin.com/jobs/ingeniero-de-software-empleos?position=1&pageNum=0" target="_blank">Bolsa de Trabajo</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="perfil">
+            <h2>Información del Graduado</h2>
+            <img src="foto_graduado.jpg" alt="Foto del Graduado" id="fotoPerfil" width="150">
+            
+            <p><strong>Nombre Completo:</strong> <span id="nombreGraduado"></span></p>
+            <p><strong>Correo Electrónico:</strong> <span id="correoGraduado"></span></p>
+            <p><strong>Profesión:</strong> Ingeniero en Software</p>
+
+            <p><strong>Especialización:</strong> <span id="especializacionVista">No especificada</span></p>
+            <p><strong>Lugar de Trabajo:</strong> <span id="lugarTrabajoVista">No especificado</span></p>
+            
+            <label for="cv">Subir CV (PDF):</label>
+            <input type="file" id="cv" name="cv" accept=".pdf">
+
+            <label for="certificado">Subir Certificado (PDF):</label>
+            <input type="file" id="certificado" name="certificado" accept=".pdf">
+
+            <p><strong>Verificación de Datos:</strong> <span id="verificado">Verificado</span></p>
+        </section>
+
+        <section id="actualizacion">
+            <h2>Actualizar Información</h2>
+            <form id="actualizarForm">
+                <label for="foto">Cambiar Foto de Perfil:</label>
+                <input type="file" id="foto" name="foto" accept="image/*">
+                <button type="button" id="btnActualizarFoto">Actualizar Foto</button>
+
+                <label for="correo">Actualizar Correo Electrónico:</label>
+                <input type="email" id="correo" name="correo" required>
+                <button type="button" id="btnActualizarCorreo">Actualizar Correo</button>
+
+                <label for="especializacion">Añadir Especialización:</label>
+                <input type="text" id="especializacion" name="especializacion" placeholder="Ej. Seguridad Informática">
+                <button type="button" id="btnActualizarEspecializacion">Actualizar Especialización</button>
+
+                <label for="lugar_trabajo">Lugar de Trabajo Actual:</label>
+                <input type="text" id="lugar_trabajo" name="lugar_trabajo" placeholder="Nombre de la empresa">
+                <button type="button" id="btnActualizarTrabajo">Actualizar Trabajo</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>Universidad Laica Eloy Alfaro de Manabí - Seguimiento a Graduados</p>
+    </footer>
+
+    <script src="perfil.js"></script>
+</body>
+</html>

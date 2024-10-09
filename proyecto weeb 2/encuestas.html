@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Encuestas - ULEAM</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1> Encuestas</h1>
+    </header>
+
+    <main>
+        <section class="modulo-encuestas">
+            <h2>Crear Encuesta</h2>
+            <form id="crearEncuestaForm">
+                <label for="titulo">Título de la Encuesta:</label>
+                <input type="text" id="titulo" name="titulo" required>
+
+                <label for="pregunta1">Pregunta 1:</label>
+                <input type="text" id="pregunta1" name="pregunta1" required>
+
+                <label for="opcion1">Opción 1:</label>
+                <input type="text" id="opcion1" name="opcion1" required>
+
+                <label for="opcion2">Opción 2:</label>
+                <input type="text" id="opcion2" name="opcion2" required>
+
+                <label for="opcion3">Opción 3:</label>
+                <input type="text" id="opcion3" name="opcion3" required>
+
+                <button type="submit">Crear Encuesta</button>
+            </form>
+        </section>
+
+        <section class="modulo-encuestas">
+            <h2>Resultados de la Encuesta</h2>
+            <div id="listaEncuestas">
+            </div>
+        </section>        
+    </main>
+
+    <footer>
+        <p>Universidad Laica Eloy Alfaro de Manabí - Seguimiento a Graduados</p>
+    </footer>
+
+    <script src="encuesta.js"></script>
+</body>
+</html>
